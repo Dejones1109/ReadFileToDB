@@ -3,11 +3,11 @@ package Model;
 public class Infomation {
  public String ID;
  public String FullName;
- public int Sex;
+ public String Sex;
  public String Village;
  public String Address;
- 
-public Infomation(String iD, String fullName, int sex, String village, String address) {
+ public Infomation() {}
+public Infomation(String iD, String fullName, String sex, String village, String address) {
 	super();
 	ID = iD;
 	FullName = fullName;
@@ -27,10 +27,10 @@ public String getFullName() {
 public void setFullName(String fullName) {
 	FullName = fullName;
 }
-public int getSex() {
+public String getSex() {
 	return Sex;
 }
-public void setSex(int sex) {
+public void setSex(String sex) {
 	Sex = sex;
 }
 public String getVillage() {

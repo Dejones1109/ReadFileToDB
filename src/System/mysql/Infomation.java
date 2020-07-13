@@ -1,5 +1,7 @@
 package System.mysql;
 
-public interface Infomation {
+import java.sql.SQLException;
 
+public interface Infomation {
+	 void SaveToDB(String ID,String FullName,String Sex,String Village,String Address) throws SQLException;
 }
